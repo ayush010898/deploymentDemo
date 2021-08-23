@@ -8,7 +8,7 @@ var server = app.listen(8089,function() {
 })
 
 app.get("/",function(req,res) {   //to display data
-    console.log("hello form server")
+    res.send("hello from server")
 })
 
 
