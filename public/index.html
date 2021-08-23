@@ -1,0 +1,54 @@
+<!Doctype html>
+<html>
+    <head>
+        <!-- <script>
+            var xhttp=new XMLHttpRequest()
+            xhttp.onload=function() {
+                var arr= JSON.parse(xhttp.responseText)
+                
+                for(i=0;i<arr.length;i++){
+                    itemname=arr[i].itemname
+                    price=arr[i].price         //no more
+                    document.getElementById("ajaxdata").innerHTML+="<table>" + "<tr>" + "<th>" + "Product Name" + "</th>" + "<th>" + "Product Price" + "</th>" + "</tr>" + "<tr>" + "<td>"  +itemname + "</td>" + "<td>" +price + "</td>" + "</tr>" +"</table>" 
+                }
+                
+                var price=JSON.parse(xhttp.responseText).price                         
+            }
+            xhttp.open("GET","/showitems")
+            xhttp.send()
+            function senddata() {
+                document.getElementById("myform").submit()
+            }
+         </script> -->
+    </head>
+    <body>
+        <form id="myform" method="POST" action="/" >
+            <table style="align-content: center;">
+                <tr style="text-align: left;">
+                    <th>
+                        Enter Name:
+                    </th>
+                    <td>
+                        <input type="text" name="name" />
+                    </td>
+                </tr>
+                <tr style="text-align: left;">
+                    <th>
+                        Enter Password:
+                    </th>
+                    <td>
+                        <input type="text" name="pass" />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        <input type="submit" value="Submit" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <!-- <div id="ajaxdata">
+            
+        </div> -->
+    </body>
+</html>
